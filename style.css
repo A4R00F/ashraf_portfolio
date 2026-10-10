@@ -160,7 +160,7 @@ h2 {
 }
 
 .brand-mark span {
-  color: #fff;
+  color: var(--lime);
 }
 
 .navbar-nav .nav-link {
@@ -229,7 +229,7 @@ h2 {
 .hero-photo {
   position: relative;
   width: 100%;
-  max-width: 360px;
+  max-width: 330px;
   margin: auto;
 }
 
@@ -1265,7 +1265,7 @@ h2 {
   }
 
   .hero-photo {
-    max-width: 300px;
+    max-width: 280px;
   }
 
   .hero-copy {
@@ -1329,7 +1329,7 @@ h2 {
   }
 
   .hero-photo {
-    max-width: 275px;
+    max-width: 255px;
   }
 
   .hero-name {
@@ -1411,7 +1411,7 @@ h2 {
   }
 
   .hero-photo {
-    max-width: 240px;
+    max-width: 225px;
   }
 
   .hero-name {
