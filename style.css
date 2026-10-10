@@ -1154,6 +1154,72 @@ h2 {
   font-size: 0.78rem;
 }
 
+.certificate-files-heading {
+  margin: 55px 0 22px;
+}
+
+.certificate-files-heading h3 {
+  margin: 0 0 5px;
+  font-size: 1.5rem;
+}
+
+.certificate-files-heading p:not(.eyebrow) {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.certificate-files {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.certificate-file {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(17, 24, 41, 0.72);
+  transition: transform 0.25s, border-color 0.25s;
+}
+
+.certificate-file:hover {
+  transform: translateY(-3px);
+  border-color: rgba(198, 255, 112, 0.5);
+}
+
+.certificate-file > i:first-child {
+  color: var(--lime);
+  font-size: 1.55rem;
+}
+
+.certificate-file > i:last-child {
+  margin-left: auto;
+  color: var(--muted);
+}
+
+.certificate-file span {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.certificate-file strong {
+  overflow: hidden;
+  color: var(--text);
+  font-size: 0.82rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.certificate-file small {
+  color: var(--muted);
+  font-size: 0.68rem;
+}
+
 /* =========================
    10. Contact
 ========================= */
@@ -1384,6 +1450,10 @@ h2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .certificate-files {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .contact-copy > p:not(.eyebrow) {
     max-width: 620px;
   }
@@ -1458,6 +1528,10 @@ h2 {
   }
 
   .certificates-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .certificate-files {
     grid-template-columns: 1fr;
   }
 
