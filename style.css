@@ -249,6 +249,7 @@ h2 {
     ),
     #151d2d;
   box-shadow: 0 25px 70px rgba(0, 0, 0, 0.3);
+  animation: profile-float 6s ease-in-out infinite;
 }
 
 .profile-top {
@@ -365,6 +366,29 @@ h2 {
   border: 2px solid var(--lime);
   border-radius: 28px;
   opacity: 0.6;
+  animation: decoration-float 6s ease-in-out infinite;
+}
+
+@keyframes profile-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes decoration-float {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(4px, -5px);
+  }
 }
 
 .availability {
