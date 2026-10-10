@@ -237,7 +237,7 @@ h2 {
   position: relative;
   z-index: 1;
   width: 100%;
-  aspect-ratio: 4 / 5;
+  padding: 17px;
   overflow: hidden;
   border-radius: 28px;
   border: 1px solid rgba(198, 255, 112, 0.35);
@@ -251,8 +251,50 @@ h2 {
   box-shadow: 0 25px 70px rgba(0, 0, 0, 0.3);
 }
 
-.profile-photo {
+.profile-top {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  height: 27px;
+  margin-bottom: 13px;
+}
+
+.window-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.window-dot.red {
+  background: #ff6b6b;
+}
+
+.window-dot.yellow {
+  background: #ffd166;
+}
+
+.window-dot.green {
+  background: #6ee7b7;
+}
+
+.profile-label {
+  margin-left: 7px;
+  color: #78859c;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+}
+
+.profile-image {
   position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: 17px;
+  background: #151d2d;
+}
+
+.profile-photo {
+  position: absolute;
+  inset: 0;
   z-index: 1;
   display: block;
   width: 100%;
@@ -264,6 +306,7 @@ h2 {
 .photo-placeholder {
   position: absolute;
   inset: 0;
+  z-index: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -285,6 +328,34 @@ h2 {
   display: none;
 }
 
+.profile-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 17px 2px 2px;
+}
+
+.profile-info h3 {
+  margin: 0 0 3px;
+  color: var(--text);
+  font-size: 1.05rem;
+  letter-spacing: -0.03em;
+}
+
+.profile-info p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.72rem;
+}
+
+.code-icon {
+  color: var(--lime);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
 .photo-decoration {
   position: absolute;
   width: 85%;
@@ -294,19 +365,6 @@ h2 {
   border: 2px solid var(--lime);
   border-radius: 28px;
   opacity: 0.6;
-}
-
-.photo-caption {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-top: 25px;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  color: var(--muted);
 }
 
 .availability {
